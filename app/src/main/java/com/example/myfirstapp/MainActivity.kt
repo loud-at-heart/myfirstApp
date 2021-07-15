@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import java.lang.NullPointerException
 
 class MainActivity : AppCompatActivity() {
     lateinit var etName: EditText //declaration
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     fun clickHandler(view: View) {
         var name = etName.text.toString()
+        throw NullPointerException()
         textView.setText(name)
         Toast.makeText(this,name,Toast.LENGTH_SHORT).show()
     }
