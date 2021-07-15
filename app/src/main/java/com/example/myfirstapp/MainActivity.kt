@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     fun clickHandler(view: View) {
         var name = etName.text.toString()
         textView.setText(name)
-//        Toast.makeText(this,name,Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,name,Toast.LENGTH_SHORT).show()
     }
 
 
